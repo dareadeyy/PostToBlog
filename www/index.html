@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Api testing</title>
+</head>
+<body>
+    <!-- This is a simple web app connected with rest api, and capable to get and post to a blog.
+         The free online web host app used is www.000webhost.com, install the apk file on your phone
+         and see how it works. it would be able to publish a post on the blog and get it display
+         on your phone as well as you send the post-->
+
+    <div id="back">
+    <div class="app-content">
+        <div class="d-flex justify-content-center pt-2" id="spinner">
+            <div class="spinner-border text-primary"></div>
+        </div>
+        <div class="container pt-2" id="mainDiv"></div>
+        <div class="container">
+            <h2>Submit a post</h2>
+            <form class="was-validated">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" class="formcontrol" id="title" placeholder="Title of post" name="title" required><br />
+                    <div class="valid-feedback">Valid.</div><br />
+                    <div class="invalidfeedback">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                    <label for="content">Content:</label>
+                    <textarea name="content" id="content" cols="30" rows="3" placeholder="Content of post"
+                        class="form-control" required></textarea>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalidfeedback">Please fill out this field.</div>
+                </div>
+
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+    </div>
+    </div>
+    <script src="cordova.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
